@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox explore</title>
+    <style>
+        .box{
+            border: 2px dashed palevioletred;
+            width: 100px;
+            
+        }
+        .container1{
+            display: flex;
+            border: 5px double goldenrod;
+            height: 200px;
+            align-items: stretch;
+            
+            flex-wrap: wrap;
+        }
+        .container2{
+            display: flex;
+            justify-content: space-evenly;
+            border: 5px double goldenrod;
+        }
+        .container3{
+            display: flex;
+            justify-content: space-between;
+            border: 5px double goldenrod;
+        }
+        #box2{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="box">box-1</div>
+        <div class="box" id="box2">box-2</div>
+    </div>
+    <div class="container2">
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+    </div>
+    <div class="container3">
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+    </div>
+</body>
+</html>
